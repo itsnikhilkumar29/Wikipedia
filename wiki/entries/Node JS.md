@@ -1,0 +1,1 @@
+Node JS is not a programming language.  It is a runtime environment for JavaScript.  It is very easy to learn.

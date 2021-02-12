@@ -1,0 +1,17 @@
+{% extends "encyclopedia/layout.html" %}
+
+{% block title %}
+	Search Results
+{% endblock %}
+
+{% block body %}
+	<h1>search results for {{ search_query }}</h1>
+	
+	<ul>
+		{% for result in search_results %}
+			<a href="{% url 'bytitle' result %}"><li>{{ result }}</li></a>
+		{% empty %}
+			No matching templates found
+		{% endfor %}
+	</ul>
+{% endblock %}
